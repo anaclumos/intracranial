@@ -19,4 +19,4 @@ export default `
   <Url type="application/opensearchdescription+xml" rel="self" template="<%= it.siteUrl %>opensearch.xml" />
   <moz:SearchForm><%= it.siteUrl %></moz:SearchForm>
 </OpenSearchDescription>
-`;
+`

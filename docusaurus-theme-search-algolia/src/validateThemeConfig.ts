@@ -5,12 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {escapeRegexp} from '@docusaurus/utils';
-import {Joi} from '@docusaurus/utils-validation';
-import type {
-  ThemeConfig,
-  ThemeConfigValidationContext,
-} from '@docusaurus/types';
+import { escapeRegexp } from '@docusaurus/utils'
+import { Joi } from '@docusaurus/utils-validation'
+import type { ThemeConfig, ThemeConfigValidationContext } from '@docusaurus/types'
 
 export const DEFAULT_CONFIG = {
   // Enabled by default, as it makes sense in most cases
@@ -19,7 +16,7 @@ export const DEFAULT_CONFIG = {
 
   searchParameters: {},
   searchPagePath: 'search',
-};
+}
 
 export const Schema = Joi.object<ThemeConfig>({
   algolia: Joi.object({
@@ -33,9 +30,7 @@ export const Schema = Joi.object<ThemeConfig>({
     }),
     apiKey: Joi.string().required(),
     indexName: Joi.string().required(),
-    searchParameters: Joi.object()
-      .default(DEFAULT_CONFIG.searchParameters)
-      .unknown(),
+    searchParameters: Joi.object().default(DEFAULT_CONFIG.searchParameters).unknown(),
     searchPagePath: Joi.alternatives()
       .try(Joi.boolean().invalid(true), Joi.string())
       .allow(null)
@@ -43,13 +38,11 @@ export const Schema = Joi.object<ThemeConfig>({
     replaceSearchResultPathname: Joi.object({
       from: Joi.custom((from) => {
         if (typeof from === 'string') {
-          return escapeRegexp(from);
+          return escapeRegexp(from)
         } else if (from instanceof RegExp) {
-          return from.source;
+          return from.source
         }
-        throw new Error(
-          `it should be a RegExp or a string, but received ${from}`,
-        );
+        throw new Error(`it should be a RegExp or a string, but received ${from}`)
       }).required(),
       to: Joi.string().required(),
     }).optional(),
@@ -57,11 +50,8 @@ export const Schema = Joi.object<ThemeConfig>({
     .label('themeConfig.algolia')
     .required()
     .unknown(), // DocSearch 3 is still alpha: don't validate the rest for now
-});
+})
 
-export function validateThemeConfig({
-  validate,
-  themeConfig,
-}: ThemeConfigValidationContext<ThemeConfig>): ThemeConfig {
-  return validate(Schema, themeConfig);
+export function validateThemeConfig({ validate, themeConfig }: ThemeConfigValidationContext<ThemeConfig>): ThemeConfig {
+  return validate(Schema, themeConfig)
 }

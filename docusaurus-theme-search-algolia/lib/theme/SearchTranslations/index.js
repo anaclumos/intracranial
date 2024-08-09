@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import {translate} from '@docusaurus/Translate';
+import { translate } from '@docusaurus/Translate'
 const translations = {
   button: {
     buttonText: translate({
@@ -94,26 +94,22 @@ const translations = {
       selectKeyAriaLabel: translate({
         id: 'theme.SearchModal.footer.selectKeyAriaLabel',
         message: 'Enter key',
-        description:
-          'The ARIA label for the Enter key button that makes the selection',
+        description: 'The ARIA label for the Enter key button that makes the selection',
       }),
       navigateText: translate({
         id: 'theme.SearchModal.footer.navigateText',
         message: 'to navigate',
-        description:
-          'The explanatory text of the action for the Arrow up and Arrow down key',
+        description: 'The explanatory text of the action for the Arrow up and Arrow down key',
       }),
       navigateUpKeyAriaLabel: translate({
         id: 'theme.SearchModal.footer.navigateUpKeyAriaLabel',
         message: 'Arrow up',
-        description:
-          'The ARIA label for the Arrow up key button that makes the navigation',
+        description: 'The ARIA label for the Arrow up key button that makes the navigation',
       }),
       navigateDownKeyAriaLabel: translate({
         id: 'theme.SearchModal.footer.navigateDownKeyAriaLabel',
         message: 'Arrow down',
-        description:
-          'The ARIA label for the Arrow down key button that makes the navigation',
+        description: 'The ARIA label for the Arrow down key button that makes the navigation',
       }),
       closeText: translate({
         id: 'theme.SearchModal.footer.closeText',
@@ -123,8 +119,7 @@ const translations = {
       closeKeyAriaLabel: translate({
         id: 'theme.SearchModal.footer.closeKeyAriaLabel',
         message: 'Escape key',
-        description:
-          'The ARIA label for the Escape key button that close the modal',
+        description: 'The ARIA label for the Escape key button that close the modal',
       }),
       searchByText: translate({
         id: 'theme.SearchModal.footer.searchByText',
@@ -136,20 +131,17 @@ const translations = {
       noResultsText: translate({
         id: 'theme.SearchModal.noResultsScreen.noResultsText',
         message: 'No results for',
-        description:
-          'The text explains that there are no results for the following search',
+        description: 'The text explains that there are no results for the following search',
       }),
       suggestedQueryText: translate({
         id: 'theme.SearchModal.noResultsScreen.suggestedQueryText',
         message: 'Try searching for',
-        description:
-          'The text for the suggested query when no results are found for the following search',
+        description: 'The text for the suggested query when no results are found for the following search',
       }),
       reportMissingResultsText: translate({
         id: 'theme.SearchModal.noResultsScreen.reportMissingResultsText',
         message: 'Believe this query should return results?',
-        description:
-          'The text for the question where the user thinks there are missing results',
+        description: 'The text for the question where the user thinks there are missing results',
       }),
       reportMissingResultsLinkText: translate({
         id: 'theme.SearchModal.noResultsScreen.reportMissingResultsLinkText',
@@ -163,5 +155,5 @@ const translations = {
     message: 'Search docs',
     description: 'The placeholder of the input of the DocSearch pop-up modal',
   }),
-};
-export default translations;
+}
+export default translations

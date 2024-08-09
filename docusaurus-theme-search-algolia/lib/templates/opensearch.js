@@ -1,11 +1,11 @@
-"use strict";
+'use strict'
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, '__esModule', { value: true })
 exports.default = `
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
@@ -20,4 +20,4 @@ exports.default = `
   <Url type="application/opensearchdescription+xml" rel="self" template="<%= it.siteUrl %>opensearch.xml" />
   <moz:SearchForm><%= it.siteUrl %></moz:SearchForm>
 </OpenSearchDescription>
-`;
+`

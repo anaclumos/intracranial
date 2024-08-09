@@ -8,4 +8,4 @@
  * Process the search result url from Algolia to its final form, ready to be
  * navigated to or used as a link
  */
-export declare function useSearchResultUrlProcessor(): (url: string) => string;
+export declare function useSearchResultUrlProcessor(): (url: string) => string
