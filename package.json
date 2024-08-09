@@ -15,7 +15,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.5.0",
     "@docusaurus/plugin-client-redirects": "^3.5.0",
-    "@docusaurus/preset-classic": "^3.5.0",
+    "@docusaurus/preset-classic": "workspace:^3.5.0",
     "@docusaurus/theme-classic": "^3.5.0",
     "@docusaurus/theme-common": "^3.5.0",
     "@docusaurus/theme-mermaid": "^3.5.0",
@@ -53,6 +53,10 @@
     "scc": "printf '\n## Stats\n' >> README.md && printf '\n```\n' >> README.md && scc . >> README.md && printf '```\n' >> README.md",
     "write-translations": "docusaurus write-translations && docusaurus write-translations --locale ko"
   },
+  "workspaces": [
+    "docusaurus-theme-search-algolia",
+    "docusaurus-preset-classic"
+  ],
   "trustedDependencies": [
     "@swc/core",
     "core-js",

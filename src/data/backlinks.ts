@@ -7220,7 +7220,7 @@ export const backlinks = {
         "WebGPU": "- It has a built-in [[shader]] [[Link (Computer Systems)|linker]] and binding ..."
     },
     "Stripe Acquires Lemon Squeezy": {
-        "2024-08-02": "- [[Stripe Acquires Lemon Squeezy]]"
+        "2024-08-02": "- [[Stripe Acquires Lemon Squeezy]] -https://react.dev/reference/react/experimentaltaintObjectReference"
     },
     "My Raycast Wrapped of 2023": {
         "2023-12-15": "- [[My Raycast Wrapped of 2023]]"

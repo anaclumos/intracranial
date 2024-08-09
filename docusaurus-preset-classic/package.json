@@ -29,7 +29,7 @@
     "@docusaurus/plugin-sitemap": "3.5.0",
     "@docusaurus/theme-classic": "3.5.0",
     "@docusaurus/theme-common": "3.5.0",
-    "@docusaurus/theme-search-algolia": "3.5.0",
+    "@docusaurus/theme-search-algolia": "workspace:3.5.0",
     "@docusaurus/types": "3.5.0"
   },
   "peerDependencies": {
